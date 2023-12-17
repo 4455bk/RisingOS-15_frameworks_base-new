@@ -4617,6 +4617,11 @@ public final class NotificationPanelViewController implements
     }
 
     @Override
+    public NotificationStackScrollLayoutController getScrollerLayoutController() {
+        return mNotificationStackScrollLayoutController;
+    }
+
+    @Override
     public void showIsland(boolean show) {
         // if landNotify is showing, it must disappear for a while      -- alphi-wang-cn
         if (/* must dismiss if not show! */ !show

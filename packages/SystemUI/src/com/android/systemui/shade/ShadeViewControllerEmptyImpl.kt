@@ -117,6 +117,7 @@ open class ShadeViewControllerEmptyImpl @Inject constructor() :
     override val legacyPanelExpansion = flowOf(0f)
     override val udfpsTransitionToFullShadeProgress = MutableStateFlow(0f)
 
+    override fun getScrollerLayoutController(): com.android.systemui.statusbar.notification.stack.NotificationStackScrollLayoutController? = null
     override fun showIsland(show: Boolean) {}
 }
 
