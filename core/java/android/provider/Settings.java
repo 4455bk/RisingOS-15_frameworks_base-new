@@ -14202,18 +14202,6 @@ public final class Settings {
         public static final String DOZE_PICK_UP_GESTURE_AMBIENT = "doze_pick_up_gesture_ambient";
 
         /**
-         * Show lyric in status bar when playing music
-         * <ul>
-         *    <li> 0 = disabled </li>
-         *    <li> 1 = enabled </li>
-         * </ul>
-         *
-         * @hide
-         */
-        @Readable
-        public static final String STATUS_BAR_SHOW_LYRIC = "status_bar_show_lyric";
-
-        /**
          * Int value specifying the power menu type (default is 0)
          * 0 - Lite
          * 1 - Full
