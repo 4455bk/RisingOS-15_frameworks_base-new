@@ -39,8 +39,12 @@ class SplitShadeStateControllerImpl @Inject constructor(private val featureFlags
             ),
     )
     override fun shouldUseSplitNotificationShade(resources: Resources): Boolean {
-        return (resources.getBoolean(R.bool.config_use_split_notification_shade) ||
-            (featureFlags.isEnabled(Flags.LOCKSCREEN_ENABLE_LANDSCAPE) &&
-                resources.getBoolean(R.bool.force_config_use_split_notification_shade)))
+        return try {
+            (resources.getBoolean(R.bool.config_use_split_notification_shade) ||
+                (featureFlags.isEnabled(Flags.LOCKSCREEN_ENABLE_LANDSCAPE) &&
+                    resources.getBoolean(R.bool.force_config_use_split_notification_shade)))
+        } catch (e: Resources.NotFoundException) {
+            false
+        }
     }
 }
