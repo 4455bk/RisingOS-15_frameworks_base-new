@@ -79,4 +79,9 @@
     <string name="screenshot_delete_description">删除屏幕截图</string>
     <string name="screen_pinning_description_no_navbar">这会将其固定在此屏幕上，直至您取消固定为止。点击&amp;即可取消固定。</string>
     <string name="screen_pinning_toast_no_navbar">要取消固定此屏幕，请点击&amp;按钮</string>
+    <string name="keyguard_mistouch_description">请移开覆盖此区域的物品</string>
+    <string name="keyguard_mistouch_exit_desciption">按音量上键退出</string>
+    <string name="keyguard_mistouch_title">防误触</string>
+    <string name="click_again">再次点击</string>
+    <string name="swipe_again">再次滑动</string>
 </resources>
